@@ -23,7 +23,7 @@ const AdminOrders = () => {
         try {
             const { data } = await axios.get("/api/v1/auth/all-orders");
             setOrders(data);
-           
+
         } catch (error) {
             console.log(error);
         }
@@ -82,11 +82,13 @@ const AdminOrders = () => {
                                                 </Select>
                                             </td>
                                             <td>{o?.buyer?.name}</td>
-                                            <td>{moment(o?.createAt).fromNow()}</td>
-                                            <td>{o?.payment.success ? "Success" : "Failed"}</td>
-                                            <td>{o?.products?.length}</td>
+                                            <td>{moment(o?.createdAt).fromNow()}</td> {/* Ensure 'createdAt' is the correct field name */}
+                                            <td>{o?.payment?.success ? "Success" : "Failed"}</td>
+                                            <td>{o?.products?.reduce((total, product) => total + product.quantity, 0)}</td> {/* Total quantity */}
                                         </tr>
                                     </tbody>
+
+                                    {/* <td>{o?.products?.length}</td> */}
                                 </table>
                                 <div className="container">
                                     {o?.products?.map((p, i) => (

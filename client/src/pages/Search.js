@@ -6,13 +6,13 @@ const Search = () => {
   return (
     <Layout title={"Search results"}>
       <div className="container">
-        <div className="text-center">
-          <h1>Search Resuts</h1>
-          <h6>
+        <div className="text-center mt-3">
+          {/* <h1>Search Resuts</h1> */}
+          <h3>
             {values?.results.length < 1
               ? "No Products Found"
-              : `Found ${values?.results.length}`}
-          </h6>
+              : `Found ${values?.results.length} Products`}
+          </h3>
           <div className="d-flex flex-wrap mt-4">
             {values?.results.map((p) => (
               <div className="card m-2" style={{ width: "18rem" }}>

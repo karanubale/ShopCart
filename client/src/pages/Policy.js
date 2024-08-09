@@ -4,23 +4,11 @@ import Layout from "./../components/Layout/Layout";
 const Policy = () => {
   return (
     <Layout>
-      <div className="row contactus ">
-        <div className="col-md-6 ">
-          <img
-            src="/images/contactus.jpeg"
-            alt="contactus"
-            style={{ width: "100%" }}
-          />
-        </div>
-        <div className="col-md-4">
-          <p>add privacy policy</p>
-          <p>add privacy policy</p>
-          <p>add privacy policy</p>
-          <p>add privacy policy</p>
-          <p>add privacy policy</p>
-          <p>add privacy policy</p>
-          <p>add privacy policy</p>
-        </div>
+      <div className="row contactus">
+        <h1> One-Line Privacy Policy:</h1>
+        <p>
+          At ShopCart, we prioritize your privacy by securely handling your personal information with the utmost care and never sharing it without your consent.
+        </p>
       </div>
     </Layout>
   );

@@ -5,15 +5,14 @@ const About = () => {
   return (
     <Layout>
       <div className="row contactus ">
-   
+
         <div className="col-md-4">
-          <p className="text-justify mt-5">
-            lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus
-            officiis obcaecati esse tempore unde ratione, eveniet mollitia,
-            perferendis eius temporibus dicta blanditiis doloremque explicabo
-            quasi sunt vero optio cum aperiam vel consectetur! Laborum enim
-            accusantium atque, excepturi sapiente amet! Tenetur ducimus aut
-            commodi illum quidem neque tempora nam.
+          <h3 className="mt-3">About ShopCart</h3>
+          <p className="text-justify mt-2">
+            Welcome to ShopCart, your one-stop online destination for all your shopping needs! At ShopCart, we strive to provide a seamless and enjoyable shopping experience by offering a wide range of products at competitive prices. Whether you're looking for the latest electronics, trendy fashion, home essentials, or unique gifts, we've got you covered.
+          </p>
+          <p className="text-justify mt-2">
+            Our user-friendly interface, secure payment options, and fast delivery services ensure that your shopping experience is as convenient as possible. We are committed to customer satisfaction, offering top-notch customer support and easy returns to make sure you’re always happy with your purchase.
           </p>
         </div>
       </div>

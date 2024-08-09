@@ -13,7 +13,6 @@ const ForgotPasssword = () => {
 
   const navigate = useNavigate();
 
-
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
@@ -26,7 +25,8 @@ const ForgotPasssword = () => {
         toast.success(res.data && res.data.message);
 
         navigate("/login");
-      } else {
+      }
+      else {
         toast.error(res.data.message);
       }
     } catch (error) {

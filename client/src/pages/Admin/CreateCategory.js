@@ -118,6 +118,10 @@ const CreateCategory = () => {
                         <td>
                           <button
                             className="btn btn-primary ms-2"
+                            style={{
+                              borderRadius: "20px",
+                              backgroundColor: "Green",
+                            }}
                             onClick={() => {
                               setVisible(true);
                               setUpdatedName(c.name);
@@ -128,6 +132,10 @@ const CreateCategory = () => {
                           </button>
                           <button
                             className="btn btn-danger ms-2"
+                            style={{
+                              borderRadius: "20px",
+                         
+                            }}
                             onClick={() => {
                               handleDelete(c._id);
                             }}

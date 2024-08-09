@@ -1,5 +1,5 @@
 import React from "react";
-import { NavLink, Link } from "react-router-dom";
+import { NavLink, Link, Navigate } from "react-router-dom";
 import { useAuth } from "../../context/auth";
 import { toast } from "react-toastify";
 import SearchInput from "../Form/SearchInput";
@@ -15,6 +15,7 @@ const Header = () => {
     setAuth({ ...auth, user: null,token: "",});
     localStorage.removeItem("auth");
     toast.success("Logout Successfully");
+  
   };
   return (
     <>
@@ -31,6 +32,7 @@ const Header = () => {
           >
             <span className="navbar-toggler-icon" />
           </button>
+          
           <div className="collapse navbar-collapse" id="navbarTogglerDemo01">
             <Link to="/" className="navbar-brand mx-4">
               ShopCart
@@ -127,7 +129,9 @@ const Header = () => {
             </ul>
           </div>
         </div>
+      
       </nav>
+      <hr />
     </>
   );
 };

@@ -3,10 +3,10 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  min-height: 70vh;
+  min-height: 80vh;
   flex-direction: column;
-  background-color: #ffdee9;
-  background-image: linear-gradient(0deg, #ffdee9 0%, #b5fffc 100%);
+  /* background-color: #ffdee9; */
+  /* background-image: linear-gradient(0deg, #ffdee9 0%, #b5fffc 100%); */
 }
 
 .form-container form {
@@ -36,7 +36,7 @@
   width: 250px;
 }
 
-.form-container form button:hover {
+/* .form-container form button:hover {
   border: 1px solid black;
   background: #000000; 
   background: -webkit-linear-gradient(
@@ -49,4 +49,4 @@
     #434343,
     #000000
   );
-}
+} */

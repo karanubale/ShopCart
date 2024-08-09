@@ -7,13 +7,11 @@ import axios from "axios";
 const Profile = () => {
 
   const [auth, setAuth] = useAuth();
-
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [phone, setPhone] = useState("");
   const [address, setAddress] = useState("");
-
 
   useEffect(() => {
     const { email, name, phone, address } = auth?.user;
@@ -34,9 +32,10 @@ const Profile = () => {
         phone,
         address,
       });
-      if (data?.errro) {
+      if(data?.errro) {
         toast.error(data?.error);
-      } else {
+      } 
+      else {
         setAuth({ ...auth, user: data?.updatedUser });
         let ls = localStorage.getItem("auth");
         ls = JSON.parse(ls);
@@ -59,7 +58,7 @@ const Profile = () => {
           <div className="col-md-9">
             <div className="form-container ">
               <form onSubmit={handleSubmit}>
-                <h4 className="title">USER PROFILE</h4>
+                <h4 className="title">User Profile</h4>
                 <div className="mb-3">
                   <input
                     type="text"

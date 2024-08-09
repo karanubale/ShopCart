@@ -215,13 +215,19 @@ const UpdateProduct = () => {
                 </Select>
               </div>
               <div className="mb-3">
-                <button className="btn btn-primary" onClick={handleUpdate}>
-                  UPDATE PRODUCT
+                <button className="btn btn-primary" onClick={handleUpdate} style={{
+                  borderRadius: "20px",
+                  backgroundColor: "Green",
+                }}>
+                  Update Product
                 </button>
               </div>
               <div className="mb-3">
-                <button className="btn btn-danger" onClick={handleDelete}>
-                  DELETE PRODUCT
+                <button className="btn btn-danger" onClick={handleDelete} style={{
+                  borderRadius: "20px",
+                  // backgroundColor: "Green",
+                }}>
+                  Delete Product
                 </button>
               </div>
             </div>

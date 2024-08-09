@@ -6,9 +6,7 @@ import fs from "fs";
 import slugify from "slugify";
 import braintree from "braintree";
 import dotenv from "dotenv";
-
 dotenv.config();
-
 
 var gateway = new braintree.BraintreeGateway({
   environment: braintree.Environment.Sandbox,

@@ -10,14 +10,14 @@ const Contact = () => {
       
         <div className="col-md-4">
           <h3 className="p-2 text-dark ">CONTACT US</h3>
-          <p className="te mt-2">
+          {/* <p className="te mt-2">
             connect with me
+          </p> */}
+          <p>
+          <FaGithub /> <Link to="https://github.com/karanubale/ShopCart"> Github</Link>
           </p>
           <p>
-          <FaGithub /> <Link to="https://github.com/karanubale"></Link>
-          </p>
-          <p>
-          <FaLinkedin /><Link to="www.linkedin.com/in/karan-ubale"></Link>
+          <FaLinkedin /><Link to="https://www.linkedin.com/in/karan-ubale-580702243/"> Linkldin</Link>
           </p>
         </div>
       </div>

@@ -14,7 +14,11 @@ const CategoryForm = ({ handleSubmit, value, setValue }) => {
           />
         </div>
 
-        <button type="submit" className="btn btn-primary">
+        <button type="submit" className="btn btn-primary" style={{
+          borderRadius: "20px",
+          backgroundColor: "Green",
+        }}>
+
           Submit
         </button>
       </form>

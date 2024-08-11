@@ -21,8 +21,13 @@ ShopCart is a full-stack e-commerce website that offers a comprehensive online s
 - npm or yarn
 
 
+
 ![Screenshot 2024-08-11 125616](https://github.com/user-attachments/assets/becfcb10-9bf8-40d8-a0fa-96f1e58294c3)
 
 
 ![Screenshot 2024-08-11 125800](https://github.com/user-attachments/assets/9d339bed-cbb9-4d89-ba31-656f15dce98a)
+
+
+![Screenshot 2024-08-11 125900](https://github.com/user-attachments/assets/6edd73e4-6aee-48f1-945c-fb6afc5a87f6)
+
 
